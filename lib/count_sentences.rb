@@ -2,7 +2,7 @@ require 'pry'
 
 class String
   def sentence?
-    /\.$/.match(self) : true : false
+    /\.$/.match(self) ? true : false
   end
 
   def question?
