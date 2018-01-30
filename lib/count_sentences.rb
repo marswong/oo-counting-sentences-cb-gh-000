@@ -2,7 +2,7 @@ require 'pry'
 
 class String
   def sentence?
-    self.match() : true :false
+    self.end_with?(".")
   end
 
   def question?
