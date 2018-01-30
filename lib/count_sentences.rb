@@ -6,11 +6,11 @@ class String
   end
 
   def question?
-    self.end_with?("?")
+    /\?$/.match(self) ? true : false
   end
 
   def exclamation?
-    self.end_with?("!")
+    /\!$/.match(self) ? true : false
   end
 
   def count_sentences
